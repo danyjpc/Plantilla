@@ -1,0 +1,31 @@
+<p>hola mundo</p>
+<br>
+<div class="container">
+    <div class="card">
+        <div class="card-body">
+            <div class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">No.</th> 
+                        <th scope="col">ID</th> 
+                        <th scope="col">Nombre</th> 
+                        <th scope="col">Dirección</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let item of items;index as i">
+                        <th scope="row">{{ (i+1) }}</th>
+                        <th scope="row">{{ item.id }}</th>
+                        <th scope="row">{{ item.firstName }}</th>
+                        <th scope="row">{{ item.address}}</th>
+                        <th scope="row"></th>
+                    </tr>
+                </tbody>
+
+            </div>
+        </div>
+        <br>
+        <h1>Hola</h1>
+    </div>
+</div>
